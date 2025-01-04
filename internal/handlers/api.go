@@ -13,4 +13,5 @@ func (httpHandler *HTTPHandler) ServeHTTP(w http.ResponseWriter, r *http.Request
 
 func InitiateRouter() {
   http.HandleFunc("/api/health", routes.GetHealth)
+  http.HandleFunc("/api/british-columbia", routes.GetBrisithColumbiaNews)
 }
